@@ -1,4 +1,30 @@
-Introduction
+<h3 align="center">
+  
+  ![header](https://firebasestorage.googleapis.com/v0/b/franki-briones.appspot.com/o/Creador%20de%20software%20y%20Emprendedor.gif?alt=media&token=414f809d-84fb-4810-97b4-399e553cfc33) 
+  
+ # Welcome I'm Franki Briones !
+
+</h3> 
+<br></br>
+
+<div>
+
+<img align="right" width="400" alt="Shimarin" src="https://firebasestorage.googleapis.com/v0/b/franki-briones.appspot.com/o/dev%20metod.gif?alt=media&token=a3c328cf-ad9b-49f5-a45d-bb84b79f4fbe"/>
+
+<h2> - / about me /</h2>
+👨‍💻 Web Developer
+<br></br>
+🖥️ Creator of Desktop Systems
+<br></br>
+🔍 Researcher of New Technologies
+<br></br>
+☁️ Cloud Computing Enthusiast
+<br></br>
+💬 Ask me about Firebase, Python, Node.js, MongoDB, JS libraries, Java ...
+<br></br>
+
+# Introduction
+
 ============
 
 `rq-dashboard` is a general purpose, lightweight,
@@ -11,47 +37,36 @@ Introduction
 Support](https://img.shields.io/pypi/pyversions/rq-dashboard.svg)](https://pypi.python.org/pypi/rq-dashboard)
 ![PyPI Downloads](https://img.shields.io/pypi/dw/rq-dashboard)
 
-Maturity notes
---------------
-
-The RQ dashboard is currently being developed and is in beta stage.
-How migrate to version 1.0 you can find [here](https://github.com/Parallels/rq-dashboard/wiki/How-to-migrate-to-1.0)
-
-You can find help  in the discussion page in [github]([http](https://github.com/Parallels/rq-dashboard)) or join our [discord server](https://discord.gg/reuhvMFT)
-
-Installing with Docker
-----------------------
+## Installing with Docker
 
 You can also run the dashboard inside of docker:
 
-* copy the ```docker-compose.yml``` file from the root of the repository to ```docker-compose.override.yml``` and change the environment variables to your liking.
-* run the following command:
+- copy the `docker-compose.yml` file from the root of the repository to `docker-compose.override.yml` and change the environment variables to your liking.
+- run the following command:
 
-  ``` {.console}
+  ```{.console}
   $ docker-compose up
   ```
 
 You can also find the official image on cjlapao/rq-dashboard:latest
 
-Installing from PyPI
---------------------
+## Installing from PyPI
 
-``` {.console}
+```{.console}
 $ pip install rq-dashboard
 ```
 
-Running the dashboard
----------------------
+## Running the dashboard
 
 Run the dashboard standalone, like this:
 
-``` {.console}
+```{.console}
 $ rq-dashboard
 * Running on http://127.0.0.1:9181/
 ...
 ```
 
-``` {.console}
+```{.console}
 $ rq-dashboard --help
 Usage: rq-dashboard [OPTIONS]
 
@@ -86,12 +101,11 @@ Options:
   --help                          Show this message and exit.
 ```
 
-Integrating the dashboard in your Flask app
--------------------------------------------
+## Integrating the dashboard in your Flask app
 
 The dashboard can be integrated in to your own [Flask](http://flask.pocoo.org/) app by accessing the blueprint directly in the normal way, e.g.:
 
-``` {.python}
+```{.python}
 from flask import Flask
 import rq_dashboard
 
@@ -112,29 +126,24 @@ If you start the Flask app on the default port, you can access the
 dashboard at <http://localhost:5000/rq>. The `cli.py:main` entry point
 provides a simple working example.
 
-Running on Heroku
------------------
+## Running on Heroku
 
-Consider using third-party project
-[rq-dashboard-on-heroku](https://github.com/metabolize/rq-dashboard-on-heroku),
-which installs rq-dashboard from PyPI and wraps in in
-[Gunicorn](https://gunicorn.org) for deployment to Heroku.
-rq-dashboard-on-heroku is maintained indepdently.
+## Running behind a Reverse Proxy
 
-Running behind a Reverse Proxy
--------------------------------
 You can run the dashboard as a `systemd` service in Linux or via a `suprevisor`
 script and then use Apache or NGINX to direct traffic to the dashboard.
 
 _This is for *non-production* functionality!_
 
 Apache Reverse Proxy example:
+
 ```
 ProxyPass /rq http://127.0.0.1:5001/rq
 ProxyPassReverse /rq http://127.0.0.1:5001/rq
 ```
 
 Systemd service example:
+
 ```
 [Unit]
 Description=Redis Queue Dashboard
@@ -152,11 +161,11 @@ Type=simple
 PermissionsStartOnly=false
 PrivateTmp=no
 ```
-* `--debug`,`-v` are optional -- they will write `stdout` to your specified files.
-* `rq_settings_dashboard` is a Python file, with settings defined. You can use options that are available as environmental variables. (EX. `RQ_DASHBOARD_REDIS_PASSWORD = password`)
 
-Developing
-----------
+- `--debug`,`-v` are optional -- they will write `stdout` to your specified files.
+- `rq_settings_dashboard` is a Python file, with settings defined. You can use options that are available as environmental variables. (EX. `RQ_DASHBOARD_REDIS_PASSWORD = password`)
+
+## Developing
 
 Develop in a virtualenv and make sure you have all the necessary build
 time (and run time) dependencies with
@@ -167,8 +176,19 @@ Develop in the normal way with
 
     $ python setup.py develop
 
-Stats
------
+## Stats
 
--   [PyPI stats](https://pypistats.org/packages/rq-dashboard)
--   [Github stats](https://github.com/Parallels/rq-dashboard/graphs/traffic)
+- [PyPI stats](https://pypistats.org/packages/rq-dashboard)
+- [Github stats](https://github.com/Parallels/rq-dashboard/graphs/traffic)
+
+## Author ✒️
+
+- **Franki Briones** - _Complete Work_ - Private Repository
+
+## Expresiones de Gratitud 🎁
+
+- Share this project with others 📢
+- Buy me a beer 🍺 or a coffee ☕.
+- Thank publicly 🤓 on my LinkedIn @franki-briones.
+
+⌨️ Like my ❤️ for work [Franki Briones](https://www.linkedin.com/in/franki-briones/) 😊
